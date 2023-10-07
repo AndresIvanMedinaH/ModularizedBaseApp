@@ -1,0 +1,148 @@
+[versions]
+#Core
+appcompat = "1.6.1"
+core-ktx = "1.7.0"
+lifecycle = "2.5.1"
+#TestImpl
+espresso = "3.5.1"
+junit = "4.13.2"
+junitExt = "1.1.5"
+#Compose
+composeVersion = "1.3.1"
+viewmodelCompose = "2.5.1"
+constraintsCompose = "1.0.1"
+composeFonts = "1.4.0-alpha05"
+material3 = "1.0.1"
+androidCompose = "3.4.1"
+composeNavigation = "2.5.3"
+activityCompose = "1.6.1"
+# Compose Bom
+compose-bom = "2022.10.00"
+
+
+serializationVersion = "1.7.0"
+gsonVersion = "2.10.1"
+coilVersion = "2.3.0"
+retrofit = "2.9.0"
+hilt = "2.44"
+hilt-navigation = "1.0.0"
+daggerHilt = "2.44"
+accompanist = "0.28.0"
+dataStore = "1.0.0"
+dataStore-Core = "1.0.0"
+material = "1.9.0"
+kotlin-bom = "1.8.0"
+androidApplication = "8.0.0"
+androidLibrary = "8.0.0"
+googleGmsServices = "4.3.15"
+kotlinCompilerExtensionVersion="1.4.3"
+kotlinVersion = "1.8.10"
+kotlinKapt="1.8.10"
+
+agp = "7.4.1"
+compileSDK="33"
+minSDK="28"
+targetSDK="33"
+
+[libraries]
+#Core
+coreAndroidX = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
+lifecycle = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle" }
+compatApp = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+espresso = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso" }
+junit = { group = "junit", name = "junit", version = "junit" }
+junitExt = { group = "androidx.test.ext", name = "junit", version.ref = "junitExt" }
+
+# Compose BOM
+composeBom = { module = "androidx.compose:compose-bom", version.ref = "compose-bom" }
+composeUI = { module = "androidx.compose.ui:ui" }
+composeMaterial = { module = "androidx.compose.material:material" }
+composePreview = { module = "androidx.compose.ui:ui-tooling-preview" }
+
+#Compose
+composeMaterial3 = { group = "androidx.compose.material3", name = "material3", version.ref = "material3"}
+composeWindows = { group = "androidx.compose.material3", name = "material3-window-size-class", version.ref = "material3"}
+composeNavigation = { group = "androidx.navigation", name = "navigation-compose", version.ref = "composeNavigation"}
+composeTooling = { group = "androidx.compose.ui", name = "ui-tooling" ,version.ref = "composeVersion"}
+composeActivity = { group = "androidx.activity", name = "activity-compose", version.ref = "composeVersion"}
+composeViewModel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "viewmodelCompose"}
+composeConstraints = { group = "androidx.constraintlayout", name = "constraintlayout-compose", version.ref = "constraintsCompose"}
+composeIcons = { group = "androidx.compose.material", name = "material-icons-core", version.ref = "composeVersion" }
+composeIconsExtended = { group = "androidx.compose.material", name = "material-icons-extended", version.ref = "composeVersion"}
+#Coil
+coil = { group = "io.coil-kt", name = "coil-compose", version.ref = "coilVersion" }
+#Permissions
+accompanist = { group = "com.google.accompanist", name = "accompanist", version.ref = "accompanist" }
+#Json Parser
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "gsonVersion" }
+serialization = { group = "org.jetbrains.kotlin", name = "kotlin-serialization", version.ref = "serializationVersion" }
+#DataStore
+dataStore = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "dataStore" }
+dataStore-Core = { group = "androidx.datastore", name = "datastore-preferences-core", version.ref = "dataStore-Core" }
+#Network
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+gsonConverter = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
+#DI
+hiltAndroid = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+hiltCompiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
+hiltNavigation = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hilt-navigation" }
+
+#Kotlin Bom
+kotlin-bom = { group = "org.jetbrains.kotlin", name = "kotlin-bom", version.ref = "kotlin-bom" }
+#Material design
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+play-services-basement = { group = "com.google.android.gms", name = "play-services-basement", version = "18.2.0" }
+
+[bundles]
+core=[
+    "coreAndroidX",
+    "compatApp",
+    "lifecycle"
+]
+testImplementation=[
+    "espresso",
+    "junit",
+    "junitExt"
+]
+composeBOM=[
+    "composeBom"
+]
+network=[
+    "retrofit",
+    "gsonConverter"
+]
+compose = [
+    "composeMaterial3",
+    "composeWindows",
+    "composeNavigation",
+    "composeTooling",
+    "composeActivity",
+    "composeViewModel",
+    "composeConstraints",
+    "composeIcons",
+    "composeIconsExtended",
+    "coil"
+]
+accompanist = [
+    "accompanist"
+]
+
+dataStore = [
+    "dataStore",
+    "dataStore-Core"
+]
+
+hilt = [
+    "hiltAndroid",
+    "hiltCompiler",
+    "hiltNavigation"
+]
+
+[plugins]
+androidApp = { id = "com.android.application", version.ref = "androidApplication"}
+androidLibrary = { id = "com.android.library", version.ref = "androidLibrary"}
+daggerHilt = { id = "com.google.dagger.hilt.android", version.ref = "daggerHilt" }
+googleGMSservices = { id = "com.google.gms.google-services", version.ref = "googleGmsServices" }
+jetbrainskotlinAndroid={id= "org.jetbrains.kotlin.android", version.ref="kotlinVersion"}
+orgjetbrainskotlinKapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlinKapt" }
+
