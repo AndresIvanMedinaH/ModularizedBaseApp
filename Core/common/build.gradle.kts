@@ -34,9 +34,5 @@ android {
 }
 
 dependencies {
-    implementation(libs.bundles.core)
-    implementation(libs.bundles.hilt)
-    implementation(libs.play.services.basement)
-    androidTestImplementation(libs.bundles.testImplementation)
 
 }

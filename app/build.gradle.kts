@@ -60,8 +60,9 @@ dependencies {
     implementation(libs.bundles.compose)
     implementation (libs.bundles.composeBOM)
     testImplementation(libs.bundles.testImplementation)
-
+    implementation(libs.bundles.network)
     implementation(libs.bundles.hilt)
     kapt (libs.hiltCompiler)
     implementation( project(":Core:domain"))
+    implementation( project(":Core:data"))
 }

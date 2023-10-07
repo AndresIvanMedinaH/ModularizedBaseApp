@@ -5,7 +5,7 @@
     <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
-        android:name="com.data.blog.App"
+        android:name="com.data.blog.com.realform.blog.App"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -16,7 +16,7 @@
         android:theme="@style/Theme.Ecomapp"
         tools:targetApi="31">
         <activity
-            android:name="com.data.blog.MainActivity"
+            android:name="com.data.blog.com.realform.blog.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.Ecomapp"

@@ -22,5 +22,4 @@ include("Core:data")
 include("Core:domain")
 include("Core:common")
 
-include(":Core:network")
-include(":Core:dependencymanagement")
+
