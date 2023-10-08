@@ -29,4 +29,5 @@ plugins {
     alias(libs.plugins.androidLibrary) apply false
     alias(libs.plugins.daggerHilt) apply false
     alias(libs.plugins.googleGMSservices)apply false
+    alias(libs.plugins.org.jetbrains.kotlin.jvm) apply false
 }

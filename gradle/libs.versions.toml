@@ -43,6 +43,7 @@ agp = "7.4.1"
 compileSDK="33"
 minSDK="28"
 targetSDK="33"
+org-jetbrains-kotlin-jvm = "1.8.10"
 
 [libraries]
 #Core
@@ -145,4 +146,5 @@ daggerHilt = { id = "com.google.dagger.hilt.android", version.ref = "daggerHilt"
 googleGMSservices = { id = "com.google.gms.google-services", version.ref = "googleGmsServices" }
 jetbrainskotlinAndroid={id= "org.jetbrains.kotlin.android", version.ref="kotlinVersion"}
 orgjetbrainskotlinKapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlinKapt" }
+org-jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "org-jetbrains-kotlin-jvm" }
 

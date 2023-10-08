@@ -59,10 +59,9 @@ dependencies {
     implementation(libs.bundles.core)
     implementation(libs.bundles.compose)
     implementation (libs.bundles.composeBOM)
+    implementation(project(":features:retrievedatausecase"))
     testImplementation(libs.bundles.testImplementation)
     implementation(libs.bundles.network)
     implementation(libs.bundles.hilt)
     kapt (libs.hiltCompiler)
-    implementation( project(":Core:domain"))
-    implementation( project(":Core:data"))
 }

@@ -1,6 +1,7 @@
 package com.realform.blog.screens.home
 
-import com.domain.model.MovieItem
+import com.realform.retrievedatausecase.domain.model.MovieItem
+
 
 data class HomeState(
     var isLoading :Boolean = false,
