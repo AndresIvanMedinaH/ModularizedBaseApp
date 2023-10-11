@@ -18,9 +18,9 @@ dependencyResolutionManagement {
 rootProject.name = "ecomapp"
 include(":app")
 include(":Core")
-include("Core:data")
-include("Core:domain")
-include("Core:common")
+include("Common")
+include(":Core:navigation")
 
 include(":features")
 include(":features:retrievedatausecase")
+

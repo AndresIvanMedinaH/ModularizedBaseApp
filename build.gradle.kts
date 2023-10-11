@@ -1,5 +1,16 @@
 
 import org.gradle.api.Project
+
+@Suppress("DSL_SCOPE_VIOLATION")
+plugins {
+    alias (libs.plugins.androidApp) apply false
+    alias(libs.plugins.jetbrainskotlinAndroid) apply false
+    alias(libs.plugins.androidLibrary) apply false
+    alias(libs.plugins.daggerHilt) apply false
+    alias(libs.plugins.googleGMSservices)apply false
+    alias(libs.plugins.org.jetbrains.kotlin.jvm) apply false
+}
+
 data class PlugProvider(
     val androidApp:Provider<PluginDependency>,
     val jetBrainsKotlin:Provider<PluginDependency>,
@@ -23,11 +34,3 @@ class PluginDef{
 }
 
 
-plugins {
-    alias (libs.plugins.androidApp) apply false
-    alias(libs.plugins.jetbrainskotlinAndroid) apply false
-    alias(libs.plugins.androidLibrary) apply false
-    alias(libs.plugins.daggerHilt) apply false
-    alias(libs.plugins.googleGMSservices)apply false
-    alias(libs.plugins.org.jetbrains.kotlin.jvm) apply false
-}
